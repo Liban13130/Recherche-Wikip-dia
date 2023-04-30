@@ -1,24 +1,25 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  min-height: 100vh;
-  background: #f1f1f1;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: clamp(20px, 5vw, 50px) 20px 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.wiki-logo{
+body {
+    min-height: 100vh;
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: clamp(20px, 5vw, 50px) 20px 20px;
+}
+
+.wiki-logo {
     width: clamp(100px, 25vw, 250px);
     display: block;
     margin: 50px auto 0;
 }
 
-h1{
+h1 {
     font-size: clamp(20px, 5vw, 50px);
     color: #333;
     text-align: center;
@@ -26,16 +27,16 @@ h1{
     font-weight: 100;
 }
 
-h1 span{
+h1 span {
     font-weight: 800;
 }
 
-form{
+form {
     max-width: 800px;
     margin: 0 auto 30px;
 }
 
-input{
+input {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -47,28 +48,30 @@ input{
     outline: none;
 }
 
-.error-msg{
+.error-msg {
     text-align: center;
     color: #454545;
 }
 
-.results-display{
+.results-display {
     max-width: 600px;
     margin: 70px auto;
 }
 
-.loader{
+.loader {
     display: none;
     justify-content: center;
 }
-.dot:nth-child(2){
+
+.dot:nth-child(2) {
     animation-delay: 0.2s;
 }
-.dot:nth-child(3){
+
+.dot:nth-child(3) {
     animation-delay: 0.3s;
 }
 
-.dot{
+.dot {
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -79,25 +82,25 @@ input{
 
 
 @keyframes load {
-    to{
+    to {
         transform: translateY(10px)
     }
 }
 
-.result-item{
+.result-item {
     margin-bottom: 20px;
 }
 
-.result-title{
+.result-title {
     font-size: 22px;
 }
 
-.result-snippet{
+.result-snippet {
     font-size: 15px;
     color: #444;
 }
 
-.result-link{
+.result-link {
     color: #006621;
     text-decoration: none;
     display: block;
